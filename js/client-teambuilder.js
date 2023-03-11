@@ -2,6 +2,7 @@
 
 	// this is a useful global
 	var teams;
+	MODS = ['gen4iceplatinum', 'gen5whiteillusion'];
 
 	exports.TeambuilderRoom = exports.Room.extend({
 		type: 'teambuilder',
@@ -26,6 +27,9 @@
 				}
 				if (this.curTeam.format.includes('bdsp')) {
 					this.curTeam.dex = Dex.mod('gen8bdsp');
+				}
+				if (MODS.includes(this.curTeam.format)) {
+					this.curTeam.dex = Dex.mod(this.curTeam.format);
 				}
 				Storage.activeSetList = this.curSetList;
 			}
@@ -693,6 +697,9 @@
 			}
 			if (this.curTeam.format.includes('bdsp')) {
 				this.curTeam.dex = Dex.mod('gen8bdsp');
+			}
+			if (MODS.includes(this.curTeam.format)) {
+				this.curTeam.dex = Dex.mod(this.curTeam.format);
 			}
 			Storage.activeSetList = this.curSetList = Storage.unpackTeam(this.curTeam.team);
 			this.curTeamIndex = i;
@@ -1488,6 +1495,9 @@
 			}
 			if (this.curTeam.format.includes('bdsp')) {
 				this.curTeam.dex = Dex.mod('gen8bdsp');
+			}
+			if (MODS.includes(this.curTeam.format)) {
+				this.curTeam.dex = Dex.mod(this.curTeam.format);
 			}
 			this.save();
 			if (this.curTeam.gen === 5 && !Dex.loadedSpriteData['bw']) Dex.loadSpriteData('bw');
