@@ -16,6 +16,7 @@ package-lock.json
 /js/server/
 /js/*.js.map
 /js/battle*.js
+!/js/battle-dex-search.js
 /js/panel*.js
 /js/replay-embed.js
 /js/client-main.js
