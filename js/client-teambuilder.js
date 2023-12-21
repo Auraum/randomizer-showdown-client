@@ -2,7 +2,7 @@
 
 	// this is a useful global
 	var teams;
-	MODS = ['gen4iceplatinum', 'gen5whiteillusion'];
+	MODS = ['gen4iceplatinum', 'gen5whiteillusion', 'gen5blackopium'];
 
 	exports.TeambuilderRoom = exports.Room.extend({
 		type: 'teambuilder',

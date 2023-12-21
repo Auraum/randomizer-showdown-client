@@ -639,7 +639,8 @@
 				for (var i = 0; i < curActive.moves.length; i++) {
 					var moveData = curActive.moves[i];
 					if (this.battle.tier.includes("Ice Platinum")) this.battle.dex = Dex.mod('gen4iceplatinum');
-					if (this.battle.tier.includes("White Illusion")) this.battle.dex = Dex.mod('gen5whiteillusion');
+					else if (this.battle.tier.includes("White Illusion")) this.battle.dex = Dex.mod('gen5whiteillusion');
+					else if (this.battle.tier.includes("Black Opium")) this.battle.dex = Dex.mod('gen5blackopium');
 					var move = this.battle.dex.moves.get(moveData.move);
 					var name = move.name;
 					var pp = moveData.pp + '/' + moveData.maxpp;

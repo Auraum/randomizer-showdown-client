@@ -574,7 +574,7 @@ this.searchType=searchType;
 this.baseResults=null;
 this.baseIllegalResults=null;
 
-MODS = ["gen4iceplatinum", "gen5whiteillusion"]
+MODS = ["gen4iceplatinum", "gen5whiteillusion", "gen5blackopium"]
 
 if(MODS.includes(format)) {}
 
