@@ -321,7 +321,7 @@ process.stdout.write("Building `data/teambuilder-tables.js`... ");
 	const NFE = GENS.map(num => num + 0.3);
 	const STADIUM = [2.04, 1.04];
 	const NATDEX = [9.1, 8.1];
-	const OTHER = [9.2, 8.6, 8.4, 8.2, 8.1, -8.4, -8.6, 7.1, 4.099, 5.199];
+	const OTHER = [9.2, 8.6, 8.4, 8.2, 8.1, -8.4, -8.6, 7.1, 4.099, 5.199, 5.299];
 	const MODS = ["gen4iceplatinum", "gen5whiteillusion", "gen5blackopium"]
 
 	// process.stdout.write("\n  ");
