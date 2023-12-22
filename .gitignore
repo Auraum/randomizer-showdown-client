@@ -33,3 +33,5 @@ package-lock.json
 /website/files/
 /website/images/
 /website/ads.txt
+data/formats.js
+data/teambuilder-tables.js
