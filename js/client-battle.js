@@ -50,10 +50,6 @@
 			this.$chat = this.$chatFrame.find('.inner');
 
 			this.$options = this.battle.scene.$options.html('<div style="padding-top: 3px; padding-right: 3px; text-align: right"><button class="icon button" name="openBattleOptions" title="Options">Battle Options</button></div>');
-		
-			if (this.battle.tier.includes("Ice Platinum")) this.battle.dex = Dex.mod('gen4iceplatinum');
-			else if (this.battle.tier.includes("White Illusion")) this.battle.dex = Dex.mod('gen5whiteillusion');
-			else if (this.battle.tier.includes("Black Opium")) this.battle.dex = Dex.mod('gen5blackopium');
 		},
 		events: {
 			'click .replayDownloadButton': 'clickReplayDownloadButton',
@@ -364,6 +360,10 @@
 			// this.choice.freedomDegrees = in a switch request: number of empty slots that can't be replaced
 			// this.choice.type = determines what the current choice screen to be displayed is
 			// this.choice.waiting = true if the choice has been sent and we're just waiting for the next turn
+	
+			if (this.battle.tier.includes("Ice Platinum")) this.battle.dex = Dex.mod('gen4iceplatinum');
+			else if (this.battle.tier.includes("White Illusion")) this.battle.dex = Dex.mod('gen5whiteillusion');
+			else if (this.battle.tier.includes("Black Opium")) this.battle.dex = Dex.mod('gen5blackopium');
 
 			switch (act) {
 			case 'move':
